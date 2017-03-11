@@ -1,0 +1,54 @@
+
+
+1、常用Meta标签：viewport  设置我们的视窗大小
+		user-scalabel=no   禁止用户使用手势来放大我们的页面
+		initial-scale=1  设置网页初始化缩放比例（把它设置为1）
+		<meta name="viewport" content="width=device-width,user-scalabel=no,initial-scale=1.0"/>(移动端不能少的句子)
+
+		重置电话号码和邮箱地址  主要是iphone手机
+		<meta name="format-detection" content="telephone=no,email=no"/>
+		用safari浏览器访问页面时，全屏显示（不出现地址栏）
+		<meta content="yes" name="apple-mobile-web-app-capable"/>
+		设置苹果手机自带的浏览器(safari)导航样式为黑色
+		<meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+
+切图做法：
+	1)pc端页面  设计图有多少个px，我们在设置css时，直接给它设置
+	2）移动端的页面：（设计图2x,3x）
+		a.640(宽度) iphone4宽度的2倍  如果设计图是按照640来设计的，那么切出来的图片在iphone6 plus手机上访问，就会产生发虚的效果
+		b.750 iphone6的分辨率的375的2倍
+		c.1242 iphone6 plus的分辨率的3倍 图片的大小
+
+
+
+移动端布局：
+	1）固定宽度（固定我们的视窗宽度）
+		把我们的viewport里面的宽度设计成设计图的宽度
+		viewport里面需要添加user-scalable=no,去掉initial-scale=1
+		把body样式设置成：{min-width:320px（移动端设备分辨率最小的）;max-width:750px（设计图的宽度）;margin:0 auto;}
+		我们切图的时候，设计图有多少个px，直接写多少
+		缺点：文字在有的机型上。可能有些发虚，有点模糊
+	2）rem布局
+		rem是相对于根节点（html）的字体大小
+		实际上就是根据用户当前访问的设备，来动态的更改html的自体大小
+		注意：不需要添加viewport    mobile.js会自动为我们添加
+
+响应式布局：
+	响应式布局需要考虑：pc浏览器/手机/平板/tv（电视）/print(打印机)
+	响应式布局的页面，都不会特别复杂。
+	每一个设备上的页面，都会有所差别。
+	响应式页面，工作量稍大，需针对每个设备以及每个分辨率来写相应的样式
+	@media 媒体查询
+	@media 针对某个设备来写样式（screen(屏幕)/tv/print/all(所有的设备)）(min-width:320px)and(max-width:640px){}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			* {
+            margin: 0;
+            padding: 0;
+        }
+        html,body {
+            width: 100%;
+            height: 100%;
+            font-family:"微软雅黑";
+        }
+		ul,li{
+			list-style:none;
+		}
+        header.header {
+            width: 100%;
+            height: 1.86rem;
+            text-align: center;
+            box-sizing: border-box;
+            border-bottom: 2px solid #07ca61;
+            position: relative;
+            color: #333;
+            font: 0.76rem/1.82rem '黑体';
+        }
+        .header .back-button {
+            position: absolute;
+            width: 1.24rem;
+            height: 1.8rem;
+            left: 0;
+            top: 0;
+            border: 0;
+            outline: none;
+            background: url('img/icon-back.png') no-repeat center center #fff;
+        }
+		.header p{
+			position:absolute;
+			top:0;
+			right:20px;
+			height:1.86rem;
+			font-size:0.52rem;
+		}
+		.top{
+			width:100%;
+			height:1.05rem;
+			padding:38px 0 40px 0;
+			text-align:center;
+			font-size:0.6rem;
+			color:#333;
+			border-bottom:20px solid #ebebeb;
+		}
+		.top p{
+			text-align:center;
+			color:#969696;
+			font-size:0.52rem;
+			
+		}
+		.top span{
+			color:#f32f00;
+		}
+		.main{
+			
+		}
+		.main ul{
+			margin-left:20px;
+		}
+		.main ul li{
+			border-bottom:1px solid #dadada;
+			font-size:0.56rem;
+			color:#969696;
+			padding:25px 0;
+		}
+		.main ul li span{
+			color:#333;
+			text-align:center;
+			float:right;
+			margin-right:20px;
+		}
+		.main ul li:nth-child(1){
+			height:0.68rem;
+			background:url(img/icon-time.png)no-repeat left center;
+			padding:25px 0 25px 30px;
+		}
+		.main ul li:nth-child(3){
+			height:1.2rem;
+		}
+		.main ul li:nth-child(1) span{
+			text-align:center;
+			color:#07CA61;
+			float:right;
+			margin-right:20px;
+		}
+		.main ul li:nth-child(4){
+			height:1.36rem;
+		}
+		.main ul li:nth-last-child(1) i{
+			color:#F32F00;
+		}
+		.main ul li:nth-last-child(1) b{
+			color:#F32F00;
+			margin-right:20px;
+			float:right;
+		}
+		.main ul li:nth-last-child(1) .price{
+			color:#333;
+		}
+		.foot{
+			background:#f9f9f9;
+			font-size:0.5rem;text-align:center;margin:50px 60px;
+			color:#07CA61;
+		}
+		
+		</style>
+		<script type="text/javascript" src="js/mobile.js" ></script>
+	</head>
+	<body>
+		<header class="header">
+        	<button class="back-button"></button>
+       		订单详细
+       		 <p> 取消订单</p>
+    	</header>
+    	<div class="top">
+    		正在分配离您最近的司机，收藏司机优先推送哦~
+    		<p>已等候：<span>00:00</span></p>
+    	</div>
+    	<div class="main">
+    		<ul>
+	    		<li>
+	    			2016-10-24 18:00
+	    			<span>等待分配司机</span>
+	    		</li>
+	    		<li>
+	    			车型
+	    			<span>面包车</span>
+	    		</li>
+	    		<li>
+	    			发货地
+	    			<span>中洲控股中心A座西门<p>11111111111</p></span>
+	    			
+	    		</li>
+	    		<li>
+	    			收货地
+	    			<span>深圳北站西广场B2出口<p>22222222222</p></span>
+	    		</li>
+	    		<li>
+	    			出发时间
+	    			<span>2016-10-25 18:00</span>
+	    		</li>
+	    		<li>
+	    			附加服务
+	    			<span>搬运，返程</span>
+	    		</li>
+	    		<li>
+	    			备注
+	    			<span>请直接到收货点来收货，谢谢！</span>
+	    		</li>
+	    		<li>
+	    			起步价<span>33元</span><br />
+	    			里程费（3.2公里）<span>64元</span><br />
+	    			返程费用（5公里免费）<span>0元</span><br />
+	    			优惠券已抵用<i>￥10</i><span>切换优惠券></span>
+	    			<div class="price">合计<b>58元</b></div>
+	    		</li>
+	    	</ul>
+    	</div>
+    	<div class="foot">
+    		温馨提示：离开本页后，您仍然可以在“我的订单”中看到该订单的状态，并进行订单操作。
+    	</div>
+	</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{
+				margin:0;
+				padding:0;
+				}
+			a{
+				text-decoration:none;
+				}
+			html,body{
+				width:100%;
+				height:100%;
+				font-family: "微软雅黑";
+				}
+			header.header{
+				width:100%;
+				height:6.1rem;
+				border-bottom:1px solid #dadada;
+				background:url(img/logo.png)no-repeat center center/6.1rem #ebebeb;
+				}
+			main.main{
+				width:100%;
+				margin:0 20px;
+				font-size:0.6rem;
+				}
+			.phone,.txt{
+				border-bottom:1px solid #dadada;
+				height:2.02rem;
+				line-height:2rem;
+				color:#969696;
+				}
+			.phone input:nth-child(1){
+				border:none;
+				height:1.96rem;
+				font-size:0.6rem;
+				margin-left:58px;
+				color:#d3d3d3;
+			}
+			.phone input:nth-child(2){
+				border:none;
+				height:1.96rem;
+				font-size:0.6rem;
+				background:white;
+				color:#07ca61;
+			}
+			.txt input{
+				border:none;
+				height:1.96rem;
+				font-size:0.6rem;
+				margin-left:58px;
+				color:#d3d3d3;
+			}
+			
+			.icon{
+				background:url(img/icon.png)no-repeat left center #fff;
+				font-size:0.52rem;
+			}
+			.icon span{
+				margin-left:35px;
+				height:1.28rem;
+				line-height:1.28rem;
+				color:#969696;
+			}
+			.icon span a{
+				color:#07CA61;
+			}
+			.sub{
+				width:14.2rem;
+				height:1.92rem;
+				border:none;
+				border-radius:10px;
+				background:#07ca61;
+				margin-top:62px;
+				font-size:0.6rem;
+				color:#fff;
+			}
+		</style>
+		<script type="text/javascript" src="js/mobile.js" ></script>
+	</head>
+	<body>
+		<header class="header"></header>
+		<main class="main">
+			<div class="phone">
+				手机号<input type="text" placeholder="请输入手机号" />
+				<input type="button" value="获取验证码" />
+			</div>
+			<div class="txt">
+				验证码<input type="text" placeholder="请输入验证码" />
+			</div>
+			<div class="icon">
+				<span>点击登录即表示您已同意<a>《方舟货的用户注册协议》</a></span>
+			</div>
+			<input type="submit" value="登录" class="sub"/>
+		</main>
+		
+	</body>
+</html>
